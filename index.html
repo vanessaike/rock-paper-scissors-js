@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script defer src="./script.js"></script>
+    <title>Rock, paper, scissors</title>
+  </head>
+  <body>
+    <main>
+      <div class="container--btns">
+        <h1>pick one:</h1>
+
+        <button class="btn btn--hand" id="btn-rock-1">
+          <img src="img/hand-1.png " alt="Rock" />
+        </button>
+
+        <button class="btn btn--hand" id="btn-paper-2">
+          <img src="img/hand-2.png" alt="Paper" />
+        </button>
+
+        <button class="btn btn--hand" id="btn-scissors-3">
+          <img src="img/hand-3.png" alt="Scissors" />
+        </button>
+      </div>
+
+      <div class="wrapper">
+        <div class="container container--you">
+          <h2>you</h2>
+          <img src="img/hand-2.png" id="icon--user" />
+          <div class="container-score">
+            <h3>score</h3>
+            <h3><span class="score--user">0</span></h3>
+          </div>
+        </div>
+
+        <div class="container container--pc">
+          <h2>computer</h2>
+          <img src="img/hand-3.png" id="icon--pc" />
+          <div class="container-score">
+            <h3>score</h3>
+            <h3><span class="score--pc">0</span></h3>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn--new-game">
+        <p><i class="fas fa-redo-alt" aria-hidden="true"></i> new game</p>
+      </button>
+    </main>
+  </body>
+</html>

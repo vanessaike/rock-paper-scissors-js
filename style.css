@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+/* GLOBAL STYLES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(98, 124, 173);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 4rem;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+/* BUTTONS */
+
+.container--btns {
+  font-size: 1.8rem;
+  padding: 5rem;
+}
+
+.btn {
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border: none;
+  border-radius: 1vh;
+  background: #f4f4f43d;
+  cursor: pointer;
+}
+
+.btn--new-game {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #f4f4f473;
+}
+
+/* CONTAINERS */
+
+.wrapper,
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 25rem;
+  height: 25rem;
+  font-size: 1.6rem;
+  border-radius: 1vh;
+  background-color: #f4f4f43d;
+}
+
+.container + .container {
+  margin-top: 2rem;
+}
+
+.container-score {
+  padding: 1.5rem;
+  color: white;
+  margin-top: 1.5rem;
+  border-radius: 1vh;
+  background-color: rgb(31, 31, 31);
+}
+
+/* class added/removed with js */
+
+.hidden {
+  display: none;
+}
+
+/* BIGGER SCREENS */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .container {
+    width: 30rem;
+    height: 30rem;
+    font-size: 1.6rem;
+  }
+
+  .container + .container {
+    margin: 0 0 0 2rem;
+  }
+}
